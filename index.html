@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D&amp;D Character Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>D&amp;D Character Generator</h1>
+        <p class="name">Character Name: <input name="name" type="text" id="name"><span id="nameError"></span></p>
+        <p class="race">Character Race: 
+            <select name="race" id="race">
+                <option value="empty">&nbsp;</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="gnome">Gnome</option>
+                <option value="half_elf">Half-elf</option>
+                <option value="half_orc">Half-orc</option>
+                <option value="halfling">Halfling</option>
+                <option value="human">Human</option>
+            </select>
+            <span id="raceError"></span>
+        </p>
+        <p id="race_description" class="description"></p>
+        <p class="class">Character Class: 
+            <select name="class" id="class">
+                <option value="empty">&nbsp;</option>
+                <option value="barbarian">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cleric">Cleric</option>
+                <option value="druid">Druid</option>
+                <option value="fighter">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="paladin">Paladin</option>
+                <option value="ranger">Ranger</option>
+                <option value="rogue">Rogue</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="wizard">Wizard</option>
+            </select>
+            <span id="classError"></span>
+        </p>
+        <p id="class_description" class="description"></p>
+        <div class="buttons">
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="reset">Reset</button>
+        </div>
+        <div>
+            <form id="form">
+                <fieldset>
+                    <legend>Please select a stat boost:</legend>
+                    Strength: <input type="radio" id="strBoost">
+                    Dexterity: <input type="radio" id="dexBoost">
+                    Constitution: <input type="radio" id="conBoost">
+                    Intelligence: <input type="radio" id="intBoost">
+                    Wisdom: <input type="radio" id="wisBoost">
+                    Charisma: <input type="radio" id="chaBoost">
+                </fieldset>
+            </form>
+        </div>
+        <div id="stats">
+            <p id="strTag">Strength:<input name="str" type="text" id="str" disabled><span id="strAdd"></span></p>
+            <p id="dexTag">Dexterity: <input name="str" type="text" id="dex" disabled><span id="dexAdd"></span></p>
+            <p id="conTag">Constitution: <input name="con" type="text" id="con" disabled><span id="conAdd"></span></p>
+            <p id="intTag">Intelligence: <input name="int" type="text" id="int" disabled><span id="intAdd"></span></p>
+            <p id="wisTag">Wisdom: <input name="wis" type="text" id="wis" disabled><span id="wisAdd"></span></p>
+            <p id="chaTag">Charisma: <input name="cha" type="text" id="cha" disabled><span id="chaAdd"></span></p>
+            <p id="goldTag">Starting Gold: <input name="gold" type="text" id="gold" disabled></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: 'Cormorant Unicase', serif;
+    text-decoration: underline;
+}
+
+#race, #class {
+    width: 100px;
+    float: right;
+}
+
+#name {
+    float: right;
+}
+
+.name, .race, .class {
+    width: 500px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.description {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+span {
+    color: red;
+    text-decoration: none;
+    
+}
+
+#stats {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    
+}
+
+#str, #dex, #con, #int, #wis, #cha {
+    margin-bottom: 2px;
+    width: 50px;
+    text-align: right;
+    
+}
+
+#strTag, #dexTag, #conTag, #intTag, #wisTag, #chaTag {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#strAdd, #dexAdd, #conAdd, #intAdd, #wisAdd, #chaAdd {
+    width: 200px;
+    display: inline-block;
+    
+}
+
+#form {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+#gold {
+    width: 50px;
+}
+
+#goldTag {
+    text-align: right;
+    margin-top: 15px;
+    border-top: solid black 1px;
+    padding-top: 10px;
+}
+
+label {
+    width: 300px;
+    text-align: right;
+    
+}
+
+legend {
+    padding-bottom: 10px;
+}
+
+#strBoost, #dexBoost, #conBoost, #intBoost, #wisBoost, #chaBoost {
+    margin-bottom: 10px;
+    margin-right: 40px
+}
+
+#wrapper {
+    border: black solid 2px;
+    width: 600px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+body {
+    background-color: cyan
+}
